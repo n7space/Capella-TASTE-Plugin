@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.commands">
+      <category
+            name="TASTE Integration"
+            id="com.n7space.capellatasteplugin.capellaintegration.commands.category">
+      </category>
+      <command
+            name="Export to TASTE"
+            categoryId="com.n7space.capellatasteplugin.capellaintegration.commands.category"
+            id="com.n7space.capellatasteplugin.capellaintegration.ExportToTaste">
+      </command>
+      <command
+            name="Generate DataView.aadl"
+            categoryId="com.n7space.capellatasteplugin.capellaintegration.commands.category"
+            id="com.n7space.capellatasteplugin.capellaintegration.GenerateDataViewAadl">
+      </command>
+      <command
+            name="Generate code skeletons"
+            categoryId="com.n7space.capellatasteplugin.capellaintegration.commands.category"
+            id="com.n7space.capellatasteplugin.capellaintegration.GenerateCodeSkeletons">
+      </command>
+      <command
+            name="Edit project in TASTE"
+            categoryId="com.n7space.capellatasteplugin.capellaintegration.commands.category"
+            id="com.n7space.capellatasteplugin.capellaintegration.EditProjectInTaste">
+      </command>      
+      <command
+            name="Build system"
+            categoryId="com.n7space.capellatasteplugin.capellaintegration.commands.category"
+            id="com.n7space.capellatasteplugin.capellaintegration.BuildSystem">
+      </command>
+      <command
+            name="Edit function in TASTE"
+            categoryId="com.n7space.capellatasteplugin.capellaintegration.commands.category"
+            id="com.n7space.capellatasteplugin.capellaintegration.EditFunction">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            commandId="com.n7space.capellatasteplugin.capellaintegration.ExportToTaste"
+            class="com.n7space.capellatasteplugin.capellaintegration.ExportToTasteActionHandler">
+      </handler>
+       <handler
+            commandId="com.n7space.capellatasteplugin.capellaintegration.GenerateDataViewAadl"
+            class="com.n7space.capellatasteplugin.capellaintegration.GenerateDataViewAadlActionHandler">
+      </handler>
+       <handler
+            commandId="com.n7space.capellatasteplugin.capellaintegration.GenerateCodeSkeletons"
+            class="com.n7space.capellatasteplugin.capellaintegration.GenerateCodeSkeletonsActionHandler">
+      </handler>
+       <handler
+            commandId="com.n7space.capellatasteplugin.capellaintegration.EditProjectInTaste"
+            class="com.n7space.capellatasteplugin.capellaintegration.EditProjectInTasteActionHandler">
+      </handler>      
+       <handler
+            commandId="com.n7space.capellatasteplugin.capellaintegration.BuildSystem"
+            class="com.n7space.capellatasteplugin.capellaintegration.BuildSystemActionHandler">
+      </handler>
+       <handler
+            commandId="com.n7space.capellatasteplugin.capellaintegration.EditFunction"
+            class="com.n7space.capellatasteplugin.capellaintegration.EditFunctionActionHandler">
+      </handler>                  
+   </extension>
+   <extension
+         point="org.eclipse.ui.bindings">
+      <key
+            commandId="com.n7space.capellatasteplugin.capellaintegration.ExportToTaste"
+            contextId="org.eclipse.ui.contexts.window"
+            sequence="M1+Alt+A"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration">
+      </key>
+   </extension>
+   
+   <extension
+         point="org.eclipse.ui.navigator.navigatorContent">
+      <actionProvider
+            class="com.n7space.capellatasteplugin.capellaintegration.ActionProvider"
+            id="capella.project.explorer.actions.tasteIntegration">
+         <enablement>
+               <or>
+                  <and>
+                     <instanceof
+                           value="org.eclipse.core.resources.IFile">
+                     </instanceof>
+                     <test
+                           forcePluginActivation="true"
+                           property="org.eclipse.core.resources.extension"
+                           value="aird">
+                     </test>
+                  </and>
+                  <and>
+                     <instanceof
+                           value="org.polarsys.capella.core.data.capellacore.NamedElement">
+                     </instanceof>
+                     <not>
+                        <and>
+                           <instanceof
+                                 value="org.eclipse.core.resources.IFile">
+                           </instanceof>
+                           <test
+                                 forcePluginActivation="true"
+                                 property="org.eclipse.core.resources.extension"
+                                 value="aird">
+                           </test>
+                        </and>
+                     </not>
+                  </and>
+               </or>
+            </enablement>
+      </actionProvider>
+   </extension>
+   
+   
+   <extension
+         point="org.eclipse.ui.menus">
+          <menuContribution locationURI="popup:org.eclipse.ui.navigator.ProjectExplorer#PopupMenu">
+            <command commandId="com.n7space.capellatasteplugin.capellaintegration.ExportToTaste"
+                label="Export to TASTE" style="push">
+                <visibleWhen>                
+                	<iterate ifEmpty="false" operator="and">
+          				<instanceof
+                			value="org.polarsys.capella.core.data.information.DataPkg">
+          				</instanceof>
+       				</iterate>                      
+                </visibleWhen>
+            </command>
+        </menuContribution>         
+      <menuContribution
+            locationURI="menu:org.eclipse.ui.main.menu?after=additions">
+         <menu
+               label="TASTE"
+               mnemonic="M"
+               id="com.n7space.capellatasteplugin.capellaintegration.menus.tasteIntegrationMenu">
+            <command
+                  commandId="com.n7space.capellatasteplugin.capellaintegration.ExportToTaste"
+                  mnemonic="S"
+                  id="com.n7space.capellatasteplugin.capellaintegration.menus.ExportToTaste">
+            </command>
+            <menu
+                label="Tools"
+                mnemonic="T"
+                id="com.n7space.capellatasteplugin.capellaintegration.menus.tasteIntegrationMenu.tools"
+            >
+            <command
+                  commandId="com.n7space.capellatasteplugin.capellaintegration.GenerateDataViewAadl"
+                  mnemonic="D"
+                  id="com.n7space.capellatasteplugin.capellaintegration.menus.GenerateDataViewAadl">
+            </command>
+            <command
+                  commandId="com.n7space.capellatasteplugin.capellaintegration.GenerateCodeSkeletons"
+                  mnemonic="G"
+                  id="com.n7space.capellatasteplugin.capellaintegration.menus.GenerateCodeSkeletons">
+            </command>
+            <command
+                  commandId="com.n7space.capellatasteplugin.capellaintegration.EditProjectInTaste"
+                  mnemonic="E"
+                  id="com.n7space.capellatasteplugin.capellaintegration.menus.EditProjectInTaste">
+            </command>            
+            <command
+                  commandId="com.n7space.capellatasteplugin.capellaintegration.EditFunction"
+                  mnemonic="F"
+                  id="com.n7space.capellatasteplugin.capellaintegration.menus.EditFunction">
+            </command>
+            <command
+                  commandId="com.n7space.capellatasteplugin.capellaintegration.BuildSystem"
+                  mnemonic="B"
+                  id="com.n7space.capellatasteplugin.capellaintegration.menus.BuildSystem">
+            </command>                                    
+            </menu>
+         </menu>
+      </menuContribution>      
+   </extension>
+   <extension
+         point="org.eclipse.ui.startup">
+      <startup
+            class="com.n7space.capellatasteplugin.capellaintegration.Startup">
+      </startup>
+   </extension>
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            class="com.n7space.capellatasteplugin.eclipseintegration.mmi.PreferencesPage"
+            id="com.n7space.capellatasteplugin.preferencesPage"
+            name="TASTE">
+      </page>
+   </extension>   
+</plugin>
