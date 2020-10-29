@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--Capella_Version_1.3.0-->
+<org.polarsys.capella.core.data.capellamodeller:Library xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:libraries="http://www.polarsys.org/capella/common/libraries/1.3.0"
+    xmlns:org.polarsys.capella.core.data.capellacommon="http://www.polarsys.org/capella/core/common/1.3.0"
+    xmlns:org.polarsys.capella.core.data.capellacore="http://www.polarsys.org/capella/core/core/1.3.0"
+    xmlns:org.polarsys.capella.core.data.capellamodeller="http://www.polarsys.org/capella/core/modeller/1.3.0"
+    xmlns:org.polarsys.capella.core.data.cs="http://www.polarsys.org/capella/core/cs/1.3.0"
+    xmlns:org.polarsys.capella.core.data.ctx="http://www.polarsys.org/capella/core/ctx/1.3.0"
+    xmlns:org.polarsys.capella.core.data.fa="http://www.polarsys.org/capella/core/fa/1.3.0"
+    xmlns:org.polarsys.capella.core.data.information="http://www.polarsys.org/capella/core/information/1.3.0"
+    xmlns:org.polarsys.capella.core.data.information.datatype="http://www.polarsys.org/capella/core/information/datatype/1.3.0"
+    xmlns:org.polarsys.capella.core.data.information.datavalue="http://www.polarsys.org/capella/core/information/datavalue/1.3.0"
+    xmlns:org.polarsys.capella.core.data.la="http://www.polarsys.org/capella/core/la/1.3.0"
+    xmlns:org.polarsys.capella.core.data.pa="http://www.polarsys.org/capella/core/pa/1.3.0"
+    id="c709e1d4-068c-4e08-b497-63a3cbc76c3e"
+    name="TasteTypes">
+  <ownedExtensions xsi:type="libraries:ModelInformation" id="02ab1caa-9f3e-42e5-95e3-cafd3c5ca1a3"/>
+  <ownedEnumerationPropertyTypes xsi:type="org.polarsys.capella.core.data.capellacore:EnumerationPropertyType"
+      id="cb01fb11-9ed7-4b83-ba15-e20df27a03ed" name="ProgressStatus">
+    <ownedLiterals xsi:type="org.polarsys.capella.core.data.capellacore:EnumerationPropertyLiteral"
+        id="e2336275-992f-44fb-b4d3-2d552a5c3fc3" name="DRAFT"/>
+    <ownedLiterals xsi:type="org.polarsys.capella.core.data.capellacore:EnumerationPropertyLiteral"
+        id="78ceda2b-f491-4e1c-8aa7-1ecf8a4627c5" name="TO_BE_REVIEWED"/>
+    <ownedLiterals xsi:type="org.polarsys.capella.core.data.capellacore:EnumerationPropertyLiteral"
+        id="0b5cf530-03c2-4364-8f26-48caa4ba25bb" name="TO_BE_DISCUSSED"/>
+    <ownedLiterals xsi:type="org.polarsys.capella.core.data.capellacore:EnumerationPropertyLiteral"
+        id="461ddfef-1711-49fa-be0f-cae98e7e6828" name="REWORK_NECESSARY"/>
+    <ownedLiterals xsi:type="org.polarsys.capella.core.data.capellacore:EnumerationPropertyLiteral"
+        id="a50e6d72-1d06-4c13-9816-ff5acae328e5" name="UNDER_REWORK"/>
+    <ownedLiterals xsi:type="org.polarsys.capella.core.data.capellacore:EnumerationPropertyLiteral"
+        id="9295cce8-bcff-4873-9b29-3079a6386b5c" name="REVIEWED_OK"/>
+  </ownedEnumerationPropertyTypes>
+  <keyValuePairs xsi:type="org.polarsys.capella.core.data.capellacore:KeyValue" id="b597fd54-d6aa-4177-88b9-5fd1b7aac4d6"
+      key="projectApproach" value="SingletonComponents"/>
+  <ownedModelRoots xsi:type="org.polarsys.capella.core.data.capellamodeller:SystemEngineering"
+      id="b6b51b2f-cc28-419b-9bac-0e66a9589aa1" name="TasteTypes">
+    <ownedArchitectures xsi:type="org.polarsys.capella.core.data.ctx:SystemAnalysis"
+        id="41d41a0a-152a-4c04-af81-51f953a649a9" name="System Analysis">
+      <ownedFunctionPkg xsi:type="org.polarsys.capella.core.data.ctx:SystemFunctionPkg"
+          id="daea09ca-7596-4613-b063-15d8912f1ec8" name="System Functions">
+        <ownedSystemFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
+            id="7b50d739-e050-4b0f-94a9-2a0861dc5dda" name="Root System Function"/>
+      </ownedFunctionPkg>
+      <ownedAbstractCapabilityPkg xsi:type="org.polarsys.capella.core.data.ctx:CapabilityPkg"
+          id="6ad03c30-90b5-4c4a-95b2-da5293607aa7" name="Capabilities"/>
+      <ownedInterfacePkg xsi:type="org.polarsys.capella.core.data.cs:InterfacePkg"
+          id="5d95ccc8-f066-42e9-9857-21babb558c3f" name="Interfaces"/>
+      <ownedDataPkg xsi:type="org.polarsys.capella.core.data.information:DataPkg"
+          id="f8c9327e-80ca-4a27-aa64-d41055c04854" name="Data">
+        <ownedDataPkgs xsi:type="org.polarsys.capella.core.data.information:DataPkg"
+            id="d395f9c3-7aa8-406f-8ece-faa97473e34f" name="Predefined Types">
+          <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:BooleanType"
+              id="8af40f7f-6d9a-4805-bb2d-744066928dea" name="Boolean" visibility="PUBLIC">
+            <ownedLiterals xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralBooleanValue"
+                id="aae4306b-a1e2-4a32-8a25-e3efdb921e05" name="True" abstractType="#8af40f7f-6d9a-4805-bb2d-744066928dea"
+                value="true"/>
+            <ownedLiterals xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralBooleanValue"
+                id="cd62a91a-9c1e-4c80-85e4-6e1a37d2f633" name="False" abstractType="#8af40f7f-6d9a-4805-bb2d-744066928dea"/>
+          </ownedDataTypes>
+          <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:NumericType"
+              id="1852f20c-524d-4373-ae3f-dc082cef0c52" name="Byte" visibility="PUBLIC">
+            <ownedMinValue xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
+                id="8baabe06-2519-4ff2-9249-ca15ff283609" name="" abstractType="#1852f20c-524d-4373-ae3f-dc082cef0c52"
+                value="0"/>
+            <ownedMaxValue xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
+                id="bfbad5f8-baf0-4ea9-a242-7343942a0716" name="" abstractType="#1852f20c-524d-4373-ae3f-dc082cef0c52"
+                value="255"/>
+          </ownedDataTypes>
+          <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:StringType"
+              id="e4d1d3df-5b36-4045-aa10-776218b93c56" name="Char" visibility="PUBLIC">
+            <ownedMinLength xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
+                id="a4eb008e-0d24-4f8d-a5ed-3095ccc5d9d1" name="" abstractType="#5f734676-7533-4aa4-8015-e93d7a6805b1"
+                value="1"/>
+            <ownedMaxLength xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
+                id="537c8e0a-0df8-4498-bffc-e571e3b21757" name="" abstractType="#5f734676-7533-4aa4-8015-e93d7a6805b1"
+                value="1"/>
+          </ownedDataTypes>
+          <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:NumericType"
+              id="cb67e6c0-b5b5-4ccc-928b-37f435a3575b" name="Double" discrete="false"
+              visibility="PUBLIC" kind="FLOAT"/>
+          <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:NumericType"
+              id="55a7b9c6-a506-47f2-a751-6e4656cd12cf" name="Float" discrete="false"
+              visibility="PUBLIC" kind="FLOAT"/>
+          <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:NumericType"
+              id="4a63b439-f0ba-42d1-92ec-ddac53404fbb" name="Hexadecimal" visibility="PUBLIC">
+            <ownedMinValue xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
+                id="bb6c1aca-8b46-43f9-85d3-0554612bfa44" name="" abstractType="#4a63b439-f0ba-42d1-92ec-ddac53404fbb"
+                value="0"/>
+            <ownedMaxValue xsi:type="org.polarsys.capella.core.data.information.datavalue:BinaryExpression"
+                id="27f42a9d-c101-4f8f-9246-abb4017db485" abstractType="#4a63b439-f0ba-42d1-92ec-ddac53404fbb"
+                operator="SUB">
+              <ownedLeftOperand xsi:type="org.polarsys.capella.core.data.information.datavalue:BinaryExpression"
+                  id="58fa859e-4438-4cc5-864c-0a8df5112b63" operator="POW">
+                <ownedLeftOperand xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
+                    id="4e50cc20-a345-4e23-9f93-d535c742af4c" value="2"/>
+                <ownedRightOperand xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
+                    id="6e5f86d4-b367-49f3-a4f3-05ea7ef3b7ff" value="64"/>
+              </ownedLeftOperand>
+              <ownedRightOperand xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
+                  id="404a9ea9-c802-430c-8d34-d34ee02880b5" value="1"/>
+            </ownedMaxValue>
+          </ownedDataTypes>
+          <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:NumericType"
+              id="bac5010a-3418-499e-ab4c-fee4dec13fd8" name="Integer" visibility="PUBLIC"/>
+          <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:NumericType"
+              id="4f7e5d52-e4e8-4882-8849-85b9be823642" name="Long" visibility="PUBLIC"/>
+          <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:NumericType"
+              id="241a24b2-9733-4340-937a-3d701e8bd832" name="LongLong" visibility="PUBLIC"/>
+          <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:NumericType"
+              id="7d0adf87-3485-4a1f-92f2-db5bd7fe2d5a" name="Short" visibility="PUBLIC"/>
+          <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:StringType"
+              id="6fa03bea-ea0a-4209-bff8-67167bec69a7" name="String" visibility="PUBLIC"/>
+          <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:NumericType"
+              id="3d20c344-f1c8-4f41-b9b4-356a507c53a8" name="UnsignedInteger" maxInclusive="false"
+              visibility="PUBLIC">
+            <ownedMinValue xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
+                id="7f1fae1c-237b-4302-a4b6-48c407e89b2e" name="" abstractType="#3d20c344-f1c8-4f41-b9b4-356a507c53a8"
+                value="0"/>
+          </ownedDataTypes>
+          <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:NumericType"
+              id="5f734676-7533-4aa4-8015-e93d7a6805b1" name="UnsignedShort" maxInclusive="false"
+              visibility="PUBLIC">
+            <ownedMinValue xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
+                id="0e2cb179-0d65-40f2-b071-7fd8eeca36b0" name="" abstractType="#5f734676-7533-4aa4-8015-e93d7a6805b1"
+                value="0"/>
+          </ownedDataTypes>
+          <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:NumericType"
+              id="35eb6d99-6c38-4b1a-b97c-55e3c8afaaf0" name="UnsignedLong" maxInclusive="false"
+              visibility="PUBLIC">
+            <ownedMinValue xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
+                id="59881f56-976d-4853-a3ae-df5a047aed60" name="" abstractType="#35eb6d99-6c38-4b1a-b97c-55e3c8afaaf0"
+                value="0"/>
+          </ownedDataTypes>
+          <ownedDataTypes xsi:type="org.polarsys.capella.core.data.information.datatype:NumericType"
+              id="88e728da-58e4-4c45-a72b-df457b062e60" name="UnsignedLongLong" maxInclusive="false"
+              visibility="PUBLIC">
+            <ownedMinValue xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
+                id="bd531667-a167-42ee-9289-9478fd55e6b1" name="" abstractType="#88e728da-58e4-4c45-a72b-df457b062e60"
+                value="0"/>
+          </ownedDataTypes>
+        </ownedDataPkgs>
+        <ownedDataPkgs xsi:type="org.polarsys.capella.core.data.information:DataPkg"
+            id="c2dbf891-f0b1-4b62-81fa-6bafa791b150" name="TastePhysicalArchitecture">
+          <ownedEnumerationPropertyTypes xsi:type="org.polarsys.capella.core.data.capellacore:EnumerationPropertyType"
+              id="a4a94a93-4c13-422e-ab69-4da41159d899" name="FunctionImplementationType">
+            <ownedLiterals xsi:type="org.polarsys.capella.core.data.capellacore:EnumerationPropertyLiteral"
+                id="0b50bef3-de6a-47a8-8a14-a96b30ce5e09" name="cFunction"/>
+            <ownedLiterals xsi:type="org.polarsys.capella.core.data.capellacore:EnumerationPropertyLiteral"
+                id="653d3cc3-0f66-4937-aa17-24075596dfaa" name="sdlModel"/>
+            <ownedLiterals xsi:type="org.polarsys.capella.core.data.capellacore:EnumerationPropertyLiteral"
+                id="e2d753c9-69ff-4f94-a41f-2ef21c0a750e" name="symulinkModel"/>
+          </ownedEnumerationPropertyTypes>
+        </ownedDataPkgs>
+      </ownedDataPkg>
+      <ownedSystemContext xsi:type="org.polarsys.capella.core.data.ctx:SystemContext"
+          id="cc070657-ef4a-4dee-be3d-f05f097c4f29" name="System Context">
+        <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="cc0590bd-10f3-40a8-bc72-fe1945d0785d"
+            name="System" abstractType="#c0b604bb-4c3a-4937-8c45-a0ffee35618d"/>
+      </ownedSystemContext>
+      <ownedSystem xsi:type="org.polarsys.capella.core.data.ctx:System" id="c0b604bb-4c3a-4937-8c45-a0ffee35618d"
+          name="System">
+        <ownedStateMachines xsi:type="org.polarsys.capella.core.data.capellacommon:StateMachine"
+            id="69624af8-ccd3-42ca-9915-591f4843c2f3" name="System State Machine">
+          <ownedRegions xsi:type="org.polarsys.capella.core.data.capellacommon:Region"
+              id="aec49a0d-0d3f-4a03-9d13-0f8a3ee6a977" name="Default Region"/>
+        </ownedStateMachines>
+      </ownedSystem>
+      <ownedActorPkg xsi:type="org.polarsys.capella.core.data.ctx:ActorPkg" id="0914df2e-d85f-488f-af91-bd7037bfc52e"
+          name="Actors"/>
+      <ownedMissionPkg xsi:type="org.polarsys.capella.core.data.ctx:MissionPkg" id="a4ec7374-1d5c-42d8-bb47-b74b7afa3eea"
+          name="Missions"/>
+    </ownedArchitectures>
+    <ownedArchitectures xsi:type="org.polarsys.capella.core.data.la:LogicalArchitecture"
+        id="945fbe62-6e96-4f3b-92b0-fd657d970bdc" name="Logical Architecture">
+      <ownedFunctionPkg xsi:type="org.polarsys.capella.core.data.la:LogicalFunctionPkg"
+          id="15dc0633-577f-4feb-b537-19f1bc650c60" name="Logical Functions">
+        <ownedLogicalFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+            id="759fc51f-ff81-4567-a42c-4f24665beb47" name="Root Logical Function">
+          <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
+              id="c477d51a-157b-4b7a-b7d4-3092492fa4ee" targetElement="#7b50d739-e050-4b0f-94a9-2a0861dc5dda"
+              sourceElement="#759fc51f-ff81-4567-a42c-4f24665beb47"/>
+        </ownedLogicalFunctions>
+      </ownedFunctionPkg>
+      <ownedAbstractCapabilityPkg xsi:type="org.polarsys.capella.core.data.la:CapabilityRealizationPkg"
+          id="c2f447d5-8243-4698-9bc0-ec44f591f331" name="Capabilities"/>
+      <ownedInterfacePkg xsi:type="org.polarsys.capella.core.data.cs:InterfacePkg"
+          id="8b95b6ec-dd3c-4cc3-90ae-8e9144be36ee" name="Interfaces"/>
+      <ownedDataPkg xsi:type="org.polarsys.capella.core.data.information:DataPkg"
+          id="8772b0a1-669d-4237-a176-f6759f3f481a" name="Data"/>
+      <ownedLogicalContext xsi:type="org.polarsys.capella.core.data.la:LogicalContext"
+          id="f7d7aa3a-535c-4034-98a5-3b74c537ddb3" name="Logical Context">
+        <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="e1d66b44-116c-44a4-9146-3b59f30b122c"
+            name="Logical System" abstractType="#8597aea5-7795-4cf1-af40-751c8d743e6a"/>
+      </ownedLogicalContext>
+      <ownedLogicalComponent xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+          id="8597aea5-7795-4cf1-af40-751c8d743e6a" name="Logical System">
+        <ownedSystemRealizations xsi:type="org.polarsys.capella.core.data.la:SystemRealization"
+            id="5d0c807e-d5d1-45eb-8170-ba4e2fea9bef" targetElement="#c0b604bb-4c3a-4937-8c45-a0ffee35618d"
+            sourceElement="#8597aea5-7795-4cf1-af40-751c8d743e6a"/>
+      </ownedLogicalComponent>
+      <ownedLogicalActorPkg xsi:type="org.polarsys.capella.core.data.la:LogicalActorPkg"
+          id="40497ba1-b8f1-4924-9c02-fc19d1c48199" name="Logical Actors"/>
+      <ownedSystemAnalysisRealizations xsi:type="org.polarsys.capella.core.data.la:SystemAnalysisRealization"
+          id="ba348af1-5771-43fd-a8f2-2fd4149fc111" targetElement="#41d41a0a-152a-4c04-af81-51f953a649a9"
+          sourceElement="#945fbe62-6e96-4f3b-92b0-fd657d970bdc"/>
+    </ownedArchitectures>
+    <ownedArchitectures xsi:type="org.polarsys.capella.core.data.pa:PhysicalArchitecture"
+        id="3bf51860-2409-492b-b0fa-2786928acd55" name="Physical Architecture">
+      <ownedFunctionPkg xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunctionPkg"
+          id="31eba594-04ed-40f9-93d6-d3bdc48c4c5c" name="Physical Functions">
+        <ownedPhysicalFunctions xsi:type="org.polarsys.capella.core.data.pa:PhysicalFunction"
+            id="af50b41b-6825-45f8-82d2-e7d722801d07" name="Root Physical Function">
+          <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
+              id="4565d87b-3b4e-4608-815a-2a331f67c56a" targetElement="#759fc51f-ff81-4567-a42c-4f24665beb47"
+              sourceElement="#af50b41b-6825-45f8-82d2-e7d722801d07"/>
+        </ownedPhysicalFunctions>
+      </ownedFunctionPkg>
+      <ownedAbstractCapabilityPkg xsi:type="org.polarsys.capella.core.data.la:CapabilityRealizationPkg"
+          id="52abb289-0df5-4067-9233-5fe87b0e27bb" name="Capabilities"/>
+      <ownedInterfacePkg xsi:type="org.polarsys.capella.core.data.cs:InterfacePkg"
+          id="f9a6fe26-f745-41db-81a7-98ce93c12af4" name="Interfaces"/>
+      <ownedDataPkg xsi:type="org.polarsys.capella.core.data.information:DataPkg"
+          id="54ed9f42-4796-425a-89c8-0e24be1337ae" name="PredefinedProperties" appliedPropertyValues="#e16b5951-fc1a-43ca-8646-30c81659847b #40eacbe8-ce2c-4135-9789-cf207de8e876">
+        <ownedDataPkgs xsi:type="org.polarsys.capella.core.data.information:DataPkg"
+            id="e0829c50-7783-447c-b565-26618b9c9162" name="Taste::ExchangeKind" appliedPropertyValues="#08b6f21c-1965-41f4-976d-c443922317d0 #d37846d9-9778-4ffa-98a5-831abfeeb348 #b8b9792c-c68f-4dd0-ab66-64010bec451a">
+          <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+              id="e16b5951-fc1a-43ca-8646-30c81659847b" name="Taste::ExchangeKind"
+              value="sporadic"/>
+          <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+              id="08b6f21c-1965-41f4-976d-c443922317d0" name="Taste::ExchangeKind"
+              value="cyclic"/>
+          <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+              id="d37846d9-9778-4ffa-98a5-831abfeeb348" name="Taste::ExchangeKind"
+              value="protected"/>
+          <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+              id="b8b9792c-c68f-4dd0-ab66-64010bec451a" name="Taste::ExchangeKind"
+              value="unprotected"/>
+        </ownedDataPkgs>
+        <ownedDataPkgs xsi:type="org.polarsys.capella.core.data.information:DataPkg"
+            id="b8c4fbcb-691c-44f1-b486-a896ce72aa65" name="FunctionProperties">
+          <ownedDataPkgs xsi:type="org.polarsys.capella.core.data.information:DataPkg"
+              id="2f34fee6-bfdf-4766-9350-f1866fd771b6" name="Taste::Language" appliedPropertyValues="#958973ed-fbad-4af6-9932-a0bf9874d617">
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="40eacbe8-ce2c-4135-9789-cf207de8e876" name="Taste::Language" summary=""
+                value="GUI"/>
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="958973ed-fbad-4af6-9932-a0bf9874d617" name="Taste::Language" value="SDL"/>
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="ebe249e5-ac16-4f3e-9205-112d2c668d1d" name="Taste::Language" summary=""
+                value="C"/>
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="c872f270-3620-4d0d-80f4-2f1e3d13772d" name="Taste::Language" summary=""
+                value="Simulink"/>
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="168636b7-dd30-4448-8f21-1eb8c02e6b79" name="Taste::Language" summary=""
+                value="Scade6"/>
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="54cd5eab-e7bc-4ef8-a4ab-084583c82cf2" name="Taste::Language" summary=""
+                value="RTDS"/>
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="1dfbe0ad-104f-468f-a5e4-0335c25197dd" name="Taste::Language" summary=""
+                value="VHDL"/>
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="f255152e-2078-4823-9f0b-eadddd4a9e9b" name="Taste::Language" summary=""
+                value="SystemC"/>
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="c8910aa7-46d2-40aa-88d1-a74e7bcdb0ba" name="Taste::Language" summary=""
+                value="Blackbox_device"/>
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="374b37c1-d38d-4345-8ab7-f26a431a91a0" name="Taste::Language" summary=""
+                value="SMP2"/>
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="268bc6f3-bda5-4877-88ac-b8554b159498" name="Taste::Language" summary=""
+                value="Ada"/>
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="62aec6e0-26cf-4500-b557-cfa3dfe0d254" name="Taste::Language" summary=""
+                value="Cpp"/>
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="bf5ffdd5-3e6e-42d4-8ec1-b4b9c80b7a08" name="Taste::Language" summary=""
+                value="VDM"/>
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="453eabce-cf90-487b-8c3e-099b8d15eb5a" name="Taste::Language" summary=""
+                value="SDL_OpenGEODE"/>
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="b518b121-e5ad-40bd-8445-4cb981a8fc5e" name="Taste::Language" summary=""
+                value="QGenC"/>
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="571cb565-225f-44c7-be2e-47661f54def0" name="Taste::Language" summary=""
+                value="QGenAda"/>
+          </ownedDataPkgs>
+        </ownedDataPkgs>
+        <ownedDataPkgs xsi:type="org.polarsys.capella.core.data.information:DataPkg"
+            id="b40b4679-da55-477b-915b-c327969552a7" name="ExchangeProperties">
+          <ownedDataPkgs xsi:type="org.polarsys.capella.core.data.information:DataPkg"
+              id="057de230-be3b-4e58-997b-b5ba5cb590bd" name="Taste::Bus" appliedPropertyValues="#aaaf7f81-7b42-4bad-8a6f-661649d00ec9 #e4f9e9c0-d00f-4c76-a876-bc39904d2bb1">
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="aaaf7f81-7b42-4bad-8a6f-661649d00ec9" name="Taste::Bus" value="ocarina_buses::ip.i"/>
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="e4f9e9c0-d00f-4c76-a876-bc39904d2bb1" name="Taste::Bus" value="ocarina_buses::generic_bus.i"/>
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="4f68403e-7d61-42f1-b92b-e6039ff854a4" name="Taste::Bus" value="ocarina_buses::dummy_bus.i"/>
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="526e65ec-a107-4678-82e6-8608983d33f2" name="Taste::Bus" value="ocarina_buses::ip.pohic"/>
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="e6ed060e-6de3-44d5-b3b9-e28ebd2e8b36" name="Taste::Bus" value="ocarina_buses::bluetooth.crazyflie"/>
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="6b8b0b17-f91f-4c55-ab1d-bed50c296939" name="Taste::Bus" value="ocarina_buses::ip.pohiada"/>
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="209bdd49-db1d-40bb-93fd-34e23b60071a" name="Taste::Bus" value="ocarina_buses::spacewire.generic"/>
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="741a49e1-3895-4a22-aa68-065446db3178" name="Taste::Bus" value="ocarina_buses::serial.generic"/>
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="d43811f4-b34b-4f17-9b58-69fc82cf1e11" name="Taste::Bus" value="Generic_Bus::Generic_Bus.impl"/>
+          </ownedDataPkgs>
+        </ownedDataPkgs>
+        <ownedDataPkgs xsi:type="org.polarsys.capella.core.data.information:DataPkg"
+            id="30e07d01-c9c9-4b92-ad63-146c9e696128" name="DeploymentNodeProperties"
+            appliedPropertyValues="#0331aef9-9510-46e3-9cb6-3ff35c520c35">
+          <ownedDataPkgs xsi:type="org.polarsys.capella.core.data.information:DataPkg"
+              id="a333fd2f-e3cf-49c5-ac41-ffbc29c39202" name="Taste::Processor" appliedPropertyValues="#22309d01-a67e-4f84-b4d9-97d4b27e06ed #f3a6b417-c0e7-4ef6-ab8d-253fbc85734e">
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="0331aef9-9510-46e3-9cb6-3ff35c520c35" name="Taste::Processor"
+                value="ocarina_processors_x86::x86.linux"/>
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="22309d01-a67e-4f84-b4d9-97d4b27e06ed" name="Taste::Processor"
+                value="ocarina_processors_arm::crazyflie_v2.gnat"/>
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="f3a6b417-c0e7-4ef6-ab8d-253fbc85734e" name="Taste::Processor"
+                value="ocarina_processors_arm::stm32f407_discovery.gnat2017"/>
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="bf956193-ea21-4cf1-8fb0-15f76fef6dd0" name="Taste::Processor"
+                value="ocarina_processors_arm::stm32f429_discovery.gnat2017"/>
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="3093a26f-1a49-4688-af0e-5970205e9843" name="Taste::Processor"
+                value="ocarina_processors_leon::leon3.rtems51_posix"/>
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="1180a928-de51-4b76-bb9d-b8add825e2f2" name="Taste::Processor"
+                value="ocarina_processors_leon::n2x.rtems51_posix"/>
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="b89d0f1d-85cf-454e-9624-efb7f77d989d" name="Taste::Processor"
+                value="ocarina_processors_leon::gr712rc.rtems51_posix"/>
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="2daf3cd4-537f-44d6-81f5-0ff3e7f0b79e" name="Taste::Processor"
+                value="ocarina_processors_leon::gr740.rtems51_posix"/>
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="bbe23173-2b5b-40ee-a73a-d4e540fe0516" name="Taste::Processor"
+                value="ocarina_processors_leon::leon3.rcc13rc5_posix"/>
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="2ece8547-c693-4235-86cc-6b2144fd5f90" name="Taste::Processor"
+                value="ocarina_processors_leon::n2x.rcc13rc5_posix"/>
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="c0c86e3e-a09c-4cae-989a-82f563ce8bff" name="Taste::Processor"
+                value="ocarina_processors_leon::gr740.rcc13rc5_posix"/>
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="b9ec0192-6e46-41d4-8e85-09f46aa65910" name="Taste::Processor"
+                value="ocarina_processors_x86::x86.linux_dll"/>
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="94772dd9-0ff0-4838-96d0-fc7d1d055acf" name="Taste::Processor"
+                value="ocarina_processors_x86::x86.win32"/>
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="37eabeb2-5e12-4f5b-a926-812279cf3fd8" name="Taste::Processor"
+                value="ocarina_processors_leon::gr712rc.rcc13rc5_posix"/>
+          </ownedDataPkgs>
+        </ownedDataPkgs>
+        <ownedDataPkgs xsi:type="org.polarsys.capella.core.data.information:DataPkg"
+            id="b1364471-fd2c-4d6a-89d8-440bb6194622" name="PortProperties">
+          <ownedPropertyValuePkgs xsi:type="org.polarsys.capella.core.data.capellacore:PropertyValuePkg"
+              id="c416d11e-0603-409a-9581-3844dcd783d1" name="PropertyValuePkg 1"/>
+          <ownedDataPkgs xsi:type="org.polarsys.capella.core.data.information:DataPkg"
+              id="4f1e625e-8da3-40e8-bc64-5fc8993a0e7a" name="Taste::DeviceClass"
+              appliedPropertyValues="#02274b62-0b58-45d8-948f-643d1fa0509e">
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="02274b62-0b58-45d8-948f-643d1fa0509e" name="Taste::DeviceClass"
+                value="ocarina_drivers::generic_sockets_ip"/>
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="9a57fa10-6701-42dd-af5a-d0a18b508ce1" name="Taste::DeviceClass"
+                value="ocarina_drivers::leon_ethernet"/>
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="b6286076-bb00-424d-92cb-5c5992b8a0e9" name="Taste::DeviceClass"
+                value="ocarina_drivers::leon_serial"/>
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="d46b9244-e295-42b1-a58b-f58e81b06b1d" name="Taste::DeviceClass"
+                value="ocarina_drivers::usb_brick_spacewire"/>
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="5b0d017d-47d4-4a0f-ae07-3b8dec624b08" name="Taste::DeviceClass"
+                value="ocarina_drivers::rasta_spacewire"/>
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="cb6a905f-b624-4615-83e4-2e3916ad874b" name="Taste::DeviceClass"
+                value="ocarina_drivers::STM32F4_serial"/>
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="89ad3510-837b-49cc-a803-1080a2cacb91" name="Taste::DeviceClass"
+                value="ocarina_drivers::Crazyflie_BLE"/>
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="dc3cf318-2e82-4cf8-b0fe-1cf1c2454620" name="Taste::DeviceClass"
+                value="ocarina_drivers::Client_BLE"/>
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="32ff7ec4-dd06-4a20-b697-14907d96c7f8" name="Taste::DeviceClass"
+                value="ocarina_drivers::generic_serial"/>
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="198030cb-4139-4b50-a832-e930571f17cb" name="Taste::DeviceClass"
+                value="GRSPW::GRSPW_Device"/>
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="84982692-3ac8-467a-834e-ecf63a03a741" name="Taste::DeviceClass"
+                value="GRUART::GRUART_Device"/>
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="5a8af980-7596-4999-a987-af4e56a4c3fa" name="Taste::DeviceClass"
+                value="Native_UART::Native_UART_Device"/>
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="423c91ad-20c3-4b89-9194-6ceede33909c" name="Taste::DeviceClass"
+                value="TCP_IP_Protocol::TCP_IP_Device"/>
+          </ownedDataPkgs>
+          <ownedDataPkgs xsi:type="org.polarsys.capella.core.data.information:DataPkg"
+              id="e505ee0e-e104-49c9-91d5-bba668ea2b89" name="Taste::Device" appliedPropertyValues="#1ba3755b-9d05-466e-b2ef-7813cc5d6d83">
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="1ba3755b-9d05-466e-b2ef-7813cc5d6d83" name="Taste::Device" value="ocarina_drivers::generic_sockets_ip.pohic"/>
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="2b988a89-7862-4b14-8654-8778206c9b11" name="Taste::Device" value="ocarina_drivers::leon_ethernet.raw"/>
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="738cdff8-fb34-47cc-9da0-a96bcc773a8e" name="Taste::Device" value="ocarina_drivers::leon_ethernet.greth"/>
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="6c98bb45-1262-48be-8974-747c2c6390d2" name="Taste::Device" value="ocarina_drivers::leon_serial.raw"/>
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="6ed24a30-959a-4f10-bb96-df2071e5abb7" name="Taste::Device" value="ocarina_drivers::leon_serial.raw_sender"/>
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="abb2d172-7d83-4303-9bf1-486b34aa6ac8" name="Taste::Device" value="ocarina_drivers::rasta_serial.raw"/>
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="b35f6689-5c31-40ff-aab0-61b4fe1befa0" name="Taste::Device" value="ocarina_drivers::rasta_serial.apbuart_drvmgr"/>
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="e6bfa7de-510b-43ab-941c-b59dd9dddbe9" name="Taste::Device" value="ocarina_drivers::rasta_serial.pohiada"/>
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="514bc4cf-06a4-451d-88a8-79af84dd8869" name="Taste::Device" value="ocarina_drivers::usb_brick_spacewire.pohic"/>
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="e07c61d0-3758-41bc-a695-e3f7f2069f61" name="Taste::Device" value="ocarina_drivers::rasta_spacewire.pohic"/>
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="88d4d7aa-deb7-4bc7-ad0b-73cc7656804a" name="Taste::Device" value="ocarina_drivers::rasta_spacewire.grspw_pohic"/>
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="d3cfbe3a-77eb-4fca-b246-39a1ed9b7eaa" name="Taste::Device" value="ocarina_drivers::rasta_spacewire.pohiada"/>
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="1df642f0-aa05-487c-b7d0-6fd4379155f4" name="Taste::Device" value="ocarina_drivers::scoc3_spacewire.pohic"/>
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="c8caa6ff-a777-4cef-b708-82927f236fb8" name="Taste::Device" value="ocarina_drivers::STM32F4_serial.pohiada"/>
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="dc3aee9e-6c8c-49ca-a92d-74d414a25217" name="Taste::Device" value="ocarina_drivers::Crazyflie_BLE.pohiada"/>
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="4155fce1-4e4a-48ac-ad07-71e8c21bfb35" name="Taste::Device" value="ocarina_drivers::Client_BLE.pohiada"/>
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="0ea7e785-a2cc-425b-ab73-8ba4750e7db4" name="Taste::Device" value="ocarina_drivers::generic_serial.raw"/>
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="c16454ec-abcd-4dfa-a54e-5911e35f737f" name="Taste::Device" value="ocarina_drivers::generic_serial.pohiada"/>
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="83116a02-64ab-402b-87a5-101f7f98948a" name="Taste::Device" value="ocarina_drivers::generic_serial.raw_sender"/>
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="7867975c-34bb-4255-9e45-4cc45205899f" name="Taste::Device" value="ocarina_drivers::generic_serial.raw_receiver"/>
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="98c5bbb5-e1a6-45c1-8928-da068946674a" name="Taste::Device" value="ocarina_drivers::generic_sockets_ip.pohiada"/>
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="436a8de4-0bd4-47cc-be20-cdd2ae8ad0df" name="Taste::Device" value="GRSPW::GRSPW_Device.impl"/>
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="94d5c44d-0efd-4269-b527-b10a92fc75db" name="Taste::Device" value="GRUART::GRUART_Device.impl"/>
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="5bc29457-2945-4dc4-bdcd-d2d2cf23038b" name="Taste::Device" value="Native_UART::Native_UART_Device.impl"/>
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="cf751610-57f9-4756-ad2e-8bd1b2b493d7" name="Taste::Device" value="TCP_IP_Protocol::TCP_IP_Device.impl"/>
+          </ownedDataPkgs>
+          <ownedDataPkgs xsi:type="org.polarsys.capella.core.data.information:DataPkg"
+              id="b4d52b0a-cb9d-43a1-8f34-39b92b9f4ccf" name="Taste::ConfigurationSchema"
+              appliedPropertyValues="#f10b92b5-1d4c-4e09-82db-0265bda1f800">
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="f10b92b5-1d4c-4e09-82db-0265bda1f800" name="Taste::ConfigurationSchema"
+                value="/home/taste/tool-inst/include/ocarina/runtime/polyorb-hi-c/src/drivers/configuration/ip.asn"/>
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="703fe602-fdcf-46c7-b31d-139e2cb28705" name="Taste::ConfigurationSchema"
+                value="/home/taste/tool-inst/include/ocarina/runtime/polyorb-hi-c/src/drivers/configuration/serial.asn"/>
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="7815ef84-7ba0-4694-913a-c3f4c125cbd8" name="Taste::ConfigurationSchema"
+                value="/home/taste/tool-inst/include/ocarina/runtime/polyorb-hi-c/src/drivers/configuration/spacewire.asn"/>
+            <ownedPropertyValues xsi:type="org.polarsys.capella.core.data.capellacore:StringPropertyValue"
+                id="8f5f079b-c537-44b8-9ca1-bd8e5c6ff364" name="Taste::ConfigurationSchema"
+                value="/home/taste/tool-inst/include/ocarina/runtime/polyorb-hi-c/src/drivers/configuration/bluetooth.asn"/>
+          </ownedDataPkgs>
+        </ownedDataPkgs>
+      </ownedDataPkg>
+      <ownedPhysicalContext xsi:type="org.polarsys.capella.core.data.pa:PhysicalContext"
+          id="75f497dd-7d33-4a6f-989e-fd77dee40eae" name="Physical Context">
+        <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="2fff0cc3-e6d1-48ce-af08-7feeaf36951d"
+            name="Physical System" abstractType="#01fdac64-c0df-47c3-95e9-c1cbec534e46"/>
+      </ownedPhysicalContext>
+      <ownedPhysicalComponent xsi:type="org.polarsys.capella.core.data.pa:PhysicalComponent"
+          id="01fdac64-c0df-47c3-95e9-c1cbec534e46" name="Physical System">
+        <ownedLogicalComponentRealizations xsi:type="org.polarsys.capella.core.data.pa:LogicalComponentRealization"
+            id="7e3a51eb-e1fe-4e55-8657-437f1d41b227" targetElement="#8597aea5-7795-4cf1-af40-751c8d743e6a"
+            sourceElement="#01fdac64-c0df-47c3-95e9-c1cbec534e46"/>
+      </ownedPhysicalComponent>
+      <ownedPhysicalActorPkg xsi:type="org.polarsys.capella.core.data.pa:PhysicalActorPkg"
+          id="4a9cba1d-20e0-46a1-a872-54caf2bab9d5" name="Physical Actors"/>
+      <ownedLogicalArchitectureRealizations xsi:type="org.polarsys.capella.core.data.pa:LogicalArchitectureRealization"
+          id="0a055652-e2a5-42aa-80cf-0cb898cd6e98" targetElement="#945fbe62-6e96-4f3b-92b0-fd657d970bdc"
+          sourceElement="#3bf51860-2409-492b-b0fa-2786928acd55"/>
+    </ownedArchitectures>
+  </ownedModelRoots>
+</org.polarsys.capella.core.data.capellamodeller:Library>

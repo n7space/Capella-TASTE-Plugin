@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:concern="http://www.eclipse.org/sirius/diagram/description/concern/1.1.0" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:filter="http://www.eclipse.org/sirius/diagram/description/filter/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:org.polarsys.capella.core.data.information="http://www.polarsys.org/capella/core/information/1.3.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/diagram/description/concern/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/concern http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/filter/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/filter http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+  <viewpoint:DAnalysis uid="_tysd8U7uEemsvZ-sku4GSw" selectedViews="_tzgWQE7uEemsvZ-sku4GSw _t-xyIE7uEemsvZ-sku4GSw _t--mcE7uEemsvZ-sku4GSw _t_PsME7uEemsvZ-sku4GSw" version="14.1.0.201810161215">
+    <semanticResources>TasteTypes.afm</semanticResources>
+    <semanticResources>TasteTypes.melodymodeller</semanticResources>
+    <ownedViews xmi:type="viewpoint:DView" uid="_tzgWQE7uEemsvZ-sku4GSw">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.polarsys.kitalpha.ad.integration.sirius/description/ad.odesign#//@ownedViewpoints[name='ad']"/>
+    </ownedViews>
+    <ownedViews xmi:type="viewpoint:DView" uid="_t-xyIE7uEemsvZ-sku4GSw">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/common.odesign#//@ownedViewpoints[name='Common']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_7FES807uEemsvZ-sku4GSw" name="[CDB] Taste Physical Architecture" repPath="#_7E6h8E7uEemsvZ-sku4GSw">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/common.odesign#//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Class%20Diagram%20Blank']"/>
+        <target xmi:type="org.polarsys.capella.core.data.information:DataPkg" href="TasteTypes.melodymodeller#f8c9327e-80ca-4a27-aa64-d41055c04854"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+    <ownedViews xmi:type="viewpoint:DView" uid="_t--mcE7uEemsvZ-sku4GSw">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/logical.odesign#//@ownedViewpoints[name='Logical%20Architecture']"/>
+    </ownedViews>
+    <ownedViews xmi:type="viewpoint:DView" uid="_t_PsME7uEemsvZ-sku4GSw">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/physical.odesign#//@ownedViewpoints[name='Physical%20Architecture']"/>
+    </ownedViews>
+  </viewpoint:DAnalysis>
+  <diagram:DSemanticDiagram uid="_7E6h8E7uEemsvZ-sku4GSw" name="[CDB] Taste Physical Architecture">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_7FES8E7uEemsvZ-sku4GSw" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_7FES8U7uEemsvZ-sku4GSw"/>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_7FOD8E7uEemsvZ-sku4GSw" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_7FOD8U7uEemsvZ-sku4GSw" type="Sirius" element="_7E6h8E7uEemsvZ-sku4GSw" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_8ucEgE7uEemsvZ-sku4GSw" type="2002" element="_8uJJkE7uEemsvZ-sku4GSw">
+          <children xmi:type="notation:Node" xmi:id="_8ucEg07uEemsvZ-sku4GSw" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_8ucEhE7uEemsvZ-sku4GSw" type="7001">
+            <styles xmi:type="notation:SortingStyle" xmi:id="_8ucEhU7uEemsvZ-sku4GSw"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_8ucEhk7uEemsvZ-sku4GSw"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_8ucEgU7uEemsvZ-sku4GSw" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8ucEgk7uEemsvZ-sku4GSw" x="210" y="70" width="1003" height="633"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_7FOD8k7uEemsvZ-sku4GSw"/>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_8uJJkE7uEemsvZ-sku4GSw" name="TastePhysicalArchitecture">
+      <target xmi:type="org.polarsys.capella.core.data.information:DataPkg" href="TasteTypes.melodymodeller#c2dbf891-f0b1-4b62-81fa-6bafa791b150"/>
+      <semanticElements xmi:type="org.polarsys.capella.core.data.information:DataPkg" href="TasteTypes.melodymodeller#c2dbf891-f0b1-4b62-81fa-6bafa791b150"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_8uJJkU7uEemsvZ-sku4GSw" borderSize="1" borderSizeComputationExpression="1" borderColor="69,69,69" backgroundStyle="GradientTopToBottom" foregroundColor="250,250,250">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/common.odesign#//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Class%20Diagram%20Blank']/@defaultLayer/@containerMappings[name='DT_DataPkg']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/common.odesign#//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Class%20Diagram%20Blank']/@defaultLayer/@containerMappings[name='DT_DataPkg']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/common.odesign#//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Class%20Diagram%20Blank']"/>
+    <currentConcern xmi:type="concern:ConcernDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/common.odesign#//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Class%20Diagram%20Blank']/@concerns/@ownedConcernDescriptions.0"/>
+    <activatedFilters xmi:type="filter:CompositeFilterDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/common.odesign#//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Class%20Diagram%20Blank']/@filters[name='Hide%20Association%20Labels']"/>
+    <activatedFilters xmi:type="filter:CompositeFilterDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/common.odesign#//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Class%20Diagram%20Blank']/@filters[name='Hide%20Technical%20Interfaces']"/>
+    <activatedFilters xmi:type="filter:CompositeFilterDescription" href="platform:/plugin/org.polarsys.kitalpha.ad.integration.sirius/description/ad.odesign#//@ownedViewpoints[name='ad']/@ownedRepresentations[name='AD%20diagram']/@filters[name='ModelExtensionFilter']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_7E6h8U7uEemsvZ-sku4GSw"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/common.odesign#//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Class%20Diagram%20Blank']/@defaultLayer"/>
+    <activatedLayers xmi:type="description_1:AdditionalLayer" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/common.odesign#//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Class%20Diagram%20Blank']/@additionalLayers[name='Communication%20Model']"/>
+    <target xmi:type="org.polarsys.capella.core.data.information:DataPkg" href="TasteTypes.melodymodeller#f8c9327e-80ca-4a27-aa64-d41055c04854"/>
+  </diagram:DSemanticDiagram>
+</xmi:XMI>
