@@ -1,5 +1,5 @@
 // N7 Space Sp. z o.o.
-// www.n7space.com
+// n7space.com
 // COPYRIGHT 2020
 
 // Licensed under the terms of:
